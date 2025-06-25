@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TGSRTC BUS PASS</title>
+</head>
+<body>
+    <form>
+        <table align="center" cellpading="1" cellspaceing="1" width="900px" style="background: #dfe6ff;">
+            <tr>
+                <td align="center"><img src="./logo.webp" width="70" align="center"></td>
+            </tr>
+            <tr>
+                <td align="center"><h1>TELANGANA STATE ROAD TRANSPORT CORPORATION</h1></td>
+            </tr>
+            <tr>
+                <td align="center"><h1>GENERAL BUSS PASS APPLICATION</h1></td>
+            </tr>
+        </table>
+        <fieldset>
+            <legend>Applicent details</legend>
+            <table width="900px">
+                <tr>
+                    <td><label for="name">Name</label></td>
+                    <td><input type="text" id="name" required maxlength="20" name="name"></td>
+                    <td><label for="fathersname">Father's/Guardian's Name</label></td>
+                    <td><input type="text" id="fathersname" required></td>
+                </tr>
+                <tr>
+                    <td><label for="dob">Date of Birth</label></td>
+                    <td><input type="date" id="dob" required></td>
+                    <td><label>Gender</label></td>
+                    <td><label for="male">Male</label>
+                    <input type="radio" id="male" name="Gender" value="male">
+                    <label for="female">Female</label>
+                    <input type="radio" id="female" name="Gender" value="female"></td>
+                </tr>
+                <tr>
+                    <td><label for="age as on">Age as on</label></td>
+                    <td><input type="date" id="age as on" required></td>
+                    <td><label for="aadhar">Aadhar Number</label></td>
+                    <td><input type="text" id="aadhar" required></td>
+                </tr>
+                <tr>
+                    <td><label for="whatsapp">Whatsapp Number</label></td>
+                    <td><input type="text" id="whatsapp" required></td>
+                    <td><label for="email">E-mail id</label></td>
+                    <td><input type="email" id="email" required maxlength="20" name="email"></td>
+                </tr>
+                <tr>
+                    <td><label for="photo">Photo</label></td>
+                    <td><input type="file" accept="file" id="photo" required></td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>Residental Adress details</legend>
+            <table width="900px">
+                <tr>
+                    <td><label for="adress">Address</label></td>
+                    <td><textarea name="adress" id="adress" maxlength="30"></textarea></td>
+                    <td><label for="District">District</label></td>
+                    <td><select name="District" id="District">
+                        <option value="Hyderabad">hyderabad</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td><label for="mendal">mendal</label></td>
+                    <td><select name="mendal" id="mendal">
+                        <option value="mendal">hyderabad</option>
+                    </select></td>
+                    <td><label for="Village">Village</label></td>
+                    <td><select name="Village" id="Village">
+                        <option value="Village">hyderabad</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td><label for="Pin code">Pin code</label></td>
+                    <td><input type="text" id="Pin code" required maxlength="20" name="Pin code"></td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>Pass Type Details</legend>
+            <table width="900px">
+                <tr>
+                    <td><label for="city">city</label></td>
+                    <td><select name="city" id="city">
+                            <option value="city">hyderabad</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="Pass Type">Pass Type</label></td>
+                    <td><select name="Pass Type" id="Pass Type">
+                            <option value="Pass Type">----Pass Type---</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>mode of payment & pass collection</legend>
+            <table width="900px">
+                <tr>
+                    <td><label for="Paymentmode">Paymentmode</label></td>
+                    <td><select name="Paymentmode" id="Paymentmode">
+                            <option value="Paymentmode">----select----</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="Pass delivery mode">Pass delivery mode</label></td>
+                    <td><select name="Pass delivery mode" id="Pass delivery modee">
+                            <option value="Pass delivery mode">----Pass Type---</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="collect">center at which you want to collect pass</label></td>
+                    <td><select name="collectpass" id="collect">
+                            <option value="collect">----select----</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </fieldset><br><br>
+        <div align="center">
+            <input type="submit" required>
+        </div>
+    </form>
+</body>
+</html>
